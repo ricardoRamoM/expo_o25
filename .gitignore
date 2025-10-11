@@ -1,0 +1,28 @@
+# --- ROS / Catkin ---
+build/
+devel/
+logs/
+
+# --- Python ---
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# --- Archivos temporales del sistema ---
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+
+# --- Archivos de JetBrains / VSCode / Otros IDEs ---
+.vscode/
+.idea/
+
+# --- Archivos del paquete que NO quieres subir ---
+bebop_teleop_1.py
+
+# --- Archivos ocultos del sistema ---
+.DS_Store
+Thumbs.db
