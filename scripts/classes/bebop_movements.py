@@ -128,13 +128,13 @@ class BebopMovements:
         self.pub.publish(self.twist)
         rospy.sleep(sleep)
 
-        self.twist.linear.x = 1       
-        self.pub.publish(self.twist)
-        rospy.sleep(sleep)
+        #self.twist.linear.x = 1       
+        #self.pub.publish(self.twist)
+        #rospy.sleep(sleep)
 
-        self.twist.linear.x = 1       
-        self.pub.publish(self.twist)
-        rospy.sleep(sleep)
+        #self.twist.linear.x = 1       
+        #self.pub.publish(self.twist)
+        #rospy.sleep(sleep)
 
         # All these for passing the windows
         # Debido a que a reconocer una ventana avanzaba y como estaban alejadas las ventanas 

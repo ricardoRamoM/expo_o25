@@ -81,7 +81,7 @@ class BebopTeleop:
         self.movements = BebopMovements(self.pub, self.pub_takeoff, self.pub_land, self.pub_camera)
 
         # Seleccion del modo inicial 
-        self.mode_flag = 'automatic'  # Podría ser 'automatic' o 'teleop'
+        self.mode_flag = 'telepop'  # Podría ser 'automatic' o 'teleop'
 
         # Subscripción al tópico de comandos automáticos
         rospy.Subscriber('/bebop/command_throttled', String, self.command_callback, queue_size=1)
@@ -97,7 +97,7 @@ class BebopTeleop:
     # ligeramente el ángulo para visualizar al frente.
     # ----------------------------------------------------------
     def init_camera_position(self):
-        self.movements.camera_tilt(-30)  # Mira totalmente hacia abajo
+        self.movements.camera_tilt(-90)  # Mira totalmente hacia abajo
         rospy.sleep(2)
         self.movements.initial_takeoff(self.mode_flag)  # (Despegue inicial opcional)
         rospy.sleep(2)
